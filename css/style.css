@@ -55,3 +55,59 @@ nav ul li a:hover{
 }
 
 
+.footerdown {
+    color: white;
+    background-color: var(--footerbackground);
+    width: 100%;
+}
+.footer-container {
+   margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+    justify-content: space-between; 
+}
+.youcode {
+    float: left;
+}
+.youcode h2 {
+    font-size: 25px;
+    font-weight: 500;
+}
+.youcode h3 {
+    font-size: 15px;
+    font-weight: 200;
+}
+.info {
+    margin-right: 0px;
+}
+.info-container {
+    display: flex;
+}
+.info h4 {
+    font-weight: 300;
+}
+.option-container {
+    margin-left: 80px;
+    text-align:left;
+}
+.option-container h4{
+    margin-bottom: 0px;
+    font-weight: 440;
+}
+.option-container ul{
+    padding: 10px;
+    padding-left: 0px;
+    margin-top: 0px;
+}
+.option-container ul li {
+    list-style-type: none;
+    margin: 5px;
+    margin-left: 0px;
+    font-weight: 220;
+    margin-bottom: 20px;
+}
+.footer-separator {
+    background-color: var(--subtextcolor);
+    height: 7px;
+    width: 85%;
+}
