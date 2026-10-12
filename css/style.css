@@ -12,6 +12,49 @@
 *{
     font-family: "Bricolage Grotesque", sans-serif;
 }
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:15px, 25px;
+}
+
+.logo{
+  font-weight:500;
+  font-size: 20px;
+  color: var(--textcolor);
+
+}
+.logo span{ 
+  color:var(--secondary);
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var( --textcolor);
+  font-size: 15px;
+  padding-bottom: 5px;
+}
+nav ul li a:hover{
+  color:var(--secondary);
+  border-bottom: 2px solid var(--secondary);
+}
+
+.btn a{
+  background: var(--secondary);
+  color: white;
+   text-decoration: none; 
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+
 .footerdown {
     color: white;
     background-color: var(--footerbackground);
