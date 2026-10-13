@@ -1,0 +1,20 @@
+@media screen and (min-width: 1000px) and (max-width: 3000px) {
+  .event-contener {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 768px) {
+  .event-contener {
+    display: block;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+  }
+  .activiter-container {
+    margin-left: 0px;
+  }
+}
