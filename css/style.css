@@ -279,3 +279,22 @@ nav ul li a:hover{
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.separator {
+    margin-left: 100px;
+    margin-right: 100px;
+    
+    height: 2px;
+    background-color: var(--subtextcolor);
+    display: flex;
+    justify-content: space-between;
+}
+.credits {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.credits h4 {
+    font-weight: 100;
+    padding-bottom:50px;
+    padding-top:25px;
+
+}
