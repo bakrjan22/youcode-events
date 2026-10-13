@@ -111,3 +111,54 @@ nav ul li a:hover{
     height: 7px;
     width: 85%;
 }
+
+.icon-container {
+    background-color: var(--background);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.activiter-container {
+    margin-left: 100px;
+}
+.activiter-displayer {
+    display: flex;
+}
+.content-box {
+    border: 1px solid #E7E5E4;
+    border-radius: 10px;
+    padding-right: 170px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.activiter h2{
+    margin-bottom: 30px;
+}
+.stats-container {
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+        display: flex;
+
+    color: white;
+}
+.stats-container h3 {
+    font-weight: 300;
+    margin-top: -10px;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+.stats-container h4 {
+    margin-top: -90px;
+}
+.stats-section {
+    background-color: var(--secondary);
+}
+
+.stats-container div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
