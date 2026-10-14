@@ -53,45 +53,6 @@ nav ul li a:hover{
   border-radius: 8px;
   font-weight: 500;
 }
-/* .hero{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--background);
- 
-  
-}
-.saison{
-  background: var(--lightgreen);
-  color: var(--darkgreen);
-  display: inline-block;
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-size: 13px;
-  font-weight: bold;
-}
-
-.hero-left h1{
-  font-size: 45px;
-  color: var(--textcolor);
-  margin: 15px 0;
-  line-height: 1.1;
-}
-
-.desc{
-  color: var(--subtextcolor);
-  font-size: 16px;
-  margin-bottom: 25px;
-}
-.image img{
-  width: 100%;
-  max-width: 500px;
-}
-
-.hero-btn{
-  display: flex;
-  gap: 15px;
-} */
  .hero{
   display: flex;
   justify-content: space-between;
@@ -145,13 +106,14 @@ nav ul li a:hover{
    
 }
 
+
 .hero-btn{
   display: flex;
   gap: 15px;
 }
 
 .btn1{
-  background-color: #b35a4a;
+  background-color: var(--secondary);
   color: white;
   padding: 12px 24px;
   border-radius: 8px;
