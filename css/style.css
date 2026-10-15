@@ -17,6 +17,7 @@ nav{
   justify-content: space-between;
   align-items: center;
   padding:15px, 25px;
+  flex-wrap: nowrap; 
 }
 
 .logo{
@@ -53,6 +54,7 @@ nav ul li a:hover{
   border-radius: 8px;
   font-weight: 500;
 }
+
  .hero{
   display: flex;
   justify-content: space-between;
@@ -100,7 +102,7 @@ nav ul li a:hover{
   width: 100%;
   max-width: 480px;
   height: auto;
-  background-color: white;
+  background-color: var(--background);
   border-radius: 20px; 
   padding: 50px; 
    
@@ -259,4 +261,98 @@ nav ul li a:hover{
     padding-bottom:50px;
     padding-top:25px;
 
+}
+.page { max-width: 1100px; margin: auto; }
+.intro {
+      background: #fce8e8; 
+     padding: 40px 20px; 
+    }
+.intro h2{
+     font-size: 32px;
+      margin-bottom: 10px;
+     }
+.intro p{
+     color: #666; 
+     font-size: 14px;
+      max-width: 600px; }
+
+.grid-events {
+  display: grid;
+  grid-template-columns: 1fr; /* Mobile 375 */
+  gap: 20px;
+  padding: 20px;
+}
+.card {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  overflow: hidden;
+  background: white;
+  display: grid;
+}
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  
+}
+.card > div:first-child {
+    height: 150px; 
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:var(--background)}
+.card .tag { 
+    color: #C2410C;
+     font-size: 11px;
+      background: #FFEDD5;
+       padding: 4px 8px;
+        border-radius: 12px; 
+        width: fit-content;
+         margin: 12px; 
+        }
+.card h4 {
+    padding: 0 12px; 
+    font-size: 15px; }
+.card p {
+     padding: 0 12px; 
+     font-size: 12px; 
+     color: #666; }
+.card a {
+     padding: 12px; 
+     font-size: 12px; 
+     color: #C2410C; 
+     text-decoration: none; 
+     font-weight: 600;
+     }
+@media (min-width: 768px) {
+  
+  .grid-events {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .burger{ display: none;}
+   .hero{ 
+    flex-direction: column;
+     padding: 40px 20px;
+     }
+  .hero-left, .image{ width: 100%; }
+  .footer-container { 
+    flex-direction: column;
+     margin: 0 20px; 
+    }
+  .info-container {
+     flex-direction: column; 
+    }
+  .option-container { 
+    margin-left: 0;
+     margin-top: 25px;
+     }
+  .separator, .credits {
+     margin-left: 20px;
+      margin-right: 20px;
+     }
+}
+@media(max-width:768px){
+  .main-header{padding:15px 2px;}
+  .main-header nav{display:none;}
+  .burger{display:block;}
 }
