@@ -145,7 +145,9 @@ nav ul li a:hover{
    margin-left: 100px;
     margin-right: 100px;
     margin-top: 20px;
-    justify-content: space-between; 
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
 }
 .youcode {
     float: left;
@@ -160,9 +162,14 @@ nav ul li a:hover{
 }
 .info {
     margin-right: 0px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
 }
 .info-container {
     display: flex;
+        flex-wrap: wrap;
+
 }
 .info h4 {
     font-weight: 300;
@@ -260,8 +267,83 @@ nav ul li a:hover{
     font-weight: 100;
     padding-bottom:50px;
     padding-top:25px;
-
 }
+.activiter-container {
+    padding-bottom: 30px;
+}
+.next-container {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top div *{
+    color: var(--secondary);
+    font-size: 13px;
+}
+.top div a{
+    text-decoration: none;
+    font-weight: 500;
+}
+.card {
+    display: flex;
+    border: 1px solid #E7E5E4;
+    width: 354px;
+    height: 414px;
+    border-radius: 10px;
+}
+.theme{
+    background-color: var(--background);
+    width: max-content;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 20px;
+    color: var(--secondary);
+}
+.theme h5 {
+    font-weight: 500;
+}
+.content {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.u-info {
+    margin-top: 40px;
+    display: grid;
+    gap: 10px;
+}
+.u-info h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: var(--subtextcolor);
+    font-weight: 300;
+    font-size: 15px;
+}
+.u-info h3 i {
+    padding-right: 11px;
+}
+.u-info a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+.u-info a i {
+    padding-left: 3px;
+}
+.next-events {
+    margin-bottom: 30px;
+}
+.card-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 .page { max-width: 1100px; margin: auto; }
 .intro {
       background: #fce8e8; 
@@ -355,4 +437,110 @@ nav ul li a:hover{
   .main-header{padding:15px 2px;}
   .main-header nav{display:none;}
   .burger{display:block;}
+}
+.pagetitle {
+    background-color: var(--background);
+}
+.pagetitle-content {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.pagetitle-content h3 {
+    font-size: 30px;
+    margin-bottom: 0px;
+    padding: 1%;
+}
+.pagetitle-content h4 {
+    font-size: 20px;
+    font-weight: 200;
+    margin-top: 15px;
+}
+.intervenant-boxcontent {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.intervenant-boxcontent h3 {
+    font-size: 30px;
+}
+
+.boxcontainer {
+    display: grid;
+    gap: 20px;
+    
+}
+.profils-pic{
+    width: 100px;
+    height: 100px;
+    background-color: var(--background);
+    border-radius: 50%;
+}
+.box {
+    border: 1px solid #E7E5E4;
+    border-radius: 10px;
+    width: 320px;
+    margin-top: 10px;
+}
+.content h3{
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+.content h4 {
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--secondary);
+}
+.content h5 {
+    font-weight: 400;
+}
+.profils-pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.profils-pic i {
+    font-size: 100px;
+    margin-top: 15px;
+}
+.container {
+    margin-left: 20px;
+}
+.container h3 {
+    font-weight: 300;
+    font-size: 20px;
+    color: #57534E;
+}
+.them-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+}
+.box-them {
+    border: 1px solid #E7E5E4;
+    grid-template-rows: 1fr 3fr;
+    display: flex;
+    border-radius: 10px;
+}
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #57534E;
+}
+.content-container h4 {
+    font-size: 15px;
+    padding-left: 14px;
+    font-weight: 400;
+    color: #57534E;
+}
+.gray-box {
+    width: 25px;
+    height: 25px;
+    background-color: #333;
+    border-radius: 10px;
 }
