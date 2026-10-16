@@ -4,6 +4,22 @@
     justify-content: space-between;
     margin-right: 100px;
   }
+  .top-container {
+    grid-template-columns: 1.6fr 1fr;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .rightsidecontent {
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr;
+  }
+  .nexteven-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 120px;    
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1440px) {
   .boxcontainer {
@@ -27,7 +43,7 @@
     gap: 20px;
   }
   .them-container {
-        grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 
   }
   .activiter-container {
@@ -39,6 +55,28 @@
   .boxcontainer {
     grid-template-columns: 1fr 1fr;
   }
+  .top-container {
+    
+  }
+  .minicontent {
+    
+  }
+  .rightsidecontent {
+    gap: 60px;
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr;
+  }
+  .top-container {
+    margin-left: 30px;
+    margin-right: 20px;
+  }
+  .nexteven-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+  }
 }
 @media screen and (min-width: 375px) and (max-width: 375px) {
   .footer-container {
@@ -49,6 +87,20 @@
   }
   .box {
     width: 140px;
+  }
+  .top-container {
+    grid-template-columns: 1fr;
+    margin-left: 30px;
+    margin-right: 20px;
+  }
+  .rightsidecontent {
+    display: block;
+  }
+  .nexteven-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
   }
 }
 /* bahija sabbar */

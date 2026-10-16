@@ -251,8 +251,8 @@
 }
 .footer-separator {
     background-color: var(--subtextcolor);
-    height: 7px;
-    width: 85%;
+    height:2px;
+    width: 100%;
 }
 
 .icon-container {
@@ -466,7 +466,9 @@
   .grid-events {
     grid-template-columns: repeat(3, 1fr);
   }
-  .burger{ display: none;}
+  .burger{
+    display: none;
+}
    .hero{ 
     flex-direction: column;
      padding: 40px 20px;
@@ -498,6 +500,7 @@
     padding-bottom: 20px;
 }
 .pagetitle-content h3 {
+    margin-left: 0px;
     font-size: 30px;
     margin-bottom: 0px;
     padding: 1%;
@@ -506,6 +509,7 @@
     font-size: 20px;
     font-weight: 200;
     margin-top: 15px;
+    margin-left: 20px;
 }
 .intervenant-boxcontent {
     padding-left: 20px;
@@ -581,6 +585,7 @@
     justify-content: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 20px;
     color: #57534E;
 }
 .content-container h4 {
@@ -593,5 +598,55 @@
     width: 25px;
     height: 25px;
     background-color: #333;
+    border-radius: 10px;
+}
+.top-container {
+    display: grid;
+    justify-content: space-between;
+
+}
+.minicontent ul li a {
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 14px;
+    color: white;
+}
+.minicontent h3 {
+    font-size: 15px;
+}
+.minicontent ul {
+    list-style: none;
+    padding: 0px;
+}
+.minicontent ul li {
+    padding: 5px;
+}
+.leftsidecontent h2 {
+    font-size: 19px;
+}
+.leftsidecontent h3 {
+    font-size: 14px;
+    font-weight: 300;
+}
+.footerdown {
+    margin-top: 40px;
+}
+.nexteven-card-container img {
+    width: 100%;
+    border-radius: 10px;
+
+}
+.card-text-content {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.card-text-content {
+    border-radius: 10px;
+}
+
+.event-card {
+    border: 1px solid #57534E;
+    width: 100%;
     border-radius: 10px;
 }
