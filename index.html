@@ -9,40 +9,59 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <nav>
-        <div class="logo">
-            <p>YouCode <span>Events</span></p>
-        </div>
- <ul>
-  <li><a href="./index.html">Accueil</a></li>
-  <li><a href="./evenements.html">Événements</a></li>
-  <li><a href="./intervenants.html">Intervenants</a></li>
-</ul>
-<div class="btn"><a  class="btn" href="#">S'inscrire</a></div>
-<div class="burger">☰</div>
-</nav>
+ <header class="main-header">
+    <nav class="navbar">
+        <a class="logo" href="./index.html">
+            YouCode <span>Events</span>
+        </a>
+
+        <button class="burger"
+                aria-label="Ouvrir le menu"
+                aria-expanded="false">☰</button>
+
+        <ul class="nav-links">
+            <li><a class="active" href="./index.html">Accueil</a></li>
+            <li><a href="./evenements.html">Événements</a></li>
+            <li><a href="./intervenants.html">Intervenants</a></li>
+        </ul>
+
+        <a class="nav-btn" href="#inscription">S'inscrire</a>
+    </nav>
     </header>
 
     <main>
-        <section class="hero">
-  <div class="hero-left">
-    <p class="saison">Saison 2026-2027</p>
-    <h1>Tous les événements YouCode, au même endroit</h1>
-    <p class="desc">Ateliers, conférences, hackathons et rencontres
-        avec des professionnels : consultez le programme et inscrivez-vous
-        en quelques clics.</p>
-    
-    <div class="hero-btn">
-      <a href="#" class="btn1">Voir les événements</a>
-      <a href="#" class="btn2">S'inscrire</a>
-    </div>
-  </div>
+    <section class="hero">
+        <div class="hero-left">
+            <p class="saison">Saison 2026-2027</p>
 
-  <div class="image">
-    <img src="/assets/images/img4.png" alt="photo">
-  </div>
-</section>
+            <h1>Tous les événements YouCode, au même endroit</h1>
+
+            <p class="desc">
+                Ateliers, conférences, hackathons et rencontres avec
+                des professionnels : consultez le programme et
+                inscrivez-vous en quelques clics.
+            </p>
+
+            <div class="hero-btn">
+                <a href="#evenements" class="btn-primary">
+                    Voir les événements
+                </a>
+
+                <a href="#inscription" class="btn-secondary">
+                    S'inscrire
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-illustration"
+             aria-label="Illustration calendrier et localisation">
+
+            <div class="calendar">
+         <div class="image">
+    <img src="./assets/images/img4.png"
+         alt="Illustration calendrier et localisation">
+</div>
+    </section>
     </main>
     
     <section class="next-events">
