@@ -64,8 +64,7 @@
     color: var(--textcolor);
 }
 
-.nav-links a:hover,
-.nav-links a.active {
+.nav-links a:hover{ 
     color: var(--secondary);
     border-bottom: 2px solid var(--secondary);
 }
@@ -84,11 +83,11 @@
     font-weight: 700;
 }
 
-.nav-btn,
+ .nav-btn,
 .btn-primary {
     background: var(--secondary);
     color: white;
-}
+} 
 
 .nav-btn:hover,
 .btn-primary:hover {
@@ -176,6 +175,12 @@
     background: white;
     overflow: visible;
 }
+/* .calendar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+} */
 .image {
     width: 100%;
     display: flex;

@@ -142,7 +142,7 @@
 }
 
 /* MOBILE - 375px */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 375px) {
     .main-header {
         width: 100vw;
         background: #FAFAF9;
@@ -226,7 +226,7 @@
 
     .image img {
         width: 100%;
-        max-width: 100%;
         height: auto;
+        display: block;
     }
 }
