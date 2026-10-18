@@ -110,91 +110,91 @@
 }
 
 .hero {
-    display: grid;
-    grid-template-columns: 1fr 0.85fr;
+    display: flex;
     align-items: center;
-    gap: 48px;
-    /* padding: 64px max(6%, calc((100% - 1160px) / 2)); */
-    background: var(--background);
-    min-height: 430px;
+    justify-content: space-between;
+    gap: 32px;
+    background:var(--background); 
+    padding: 40px 40px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .hero-left {
-    max-width: 650px;
+    flex: 1;
+    max-width: 700px;
 }
 
 .saison {
     display: inline-block;
-    margin: 0 0 16px;
-    padding: 7px 14px;
-    border-radius: 99px;
-    background: #CCFBF1;
-    color: #0F766E;
-    font-size: 13px;
+    background: var(--lightgreen);
+    color: var(--darkgreen);
+    font-size: 11px;
     font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 12px;
+    margin-bottom: 18px;
 }
 
 .hero h1 {
-    margin: 0 0 20px;
-    font-size: clamp(32px, 4vw, 44px);
-    line-height: 1.16;
-    letter-spacing: -0.7px;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 800;
+    color: var(--textcolor);
+    margin: 0 0 12px;
+    max-width: 380px;
 }
 
 .desc {
-    max-width: 620px;
-    margin: 0 0 26px;
+    font-size: 12.5px;
+    line-height: 1.6;
     color: var(--subtextcolor);
-    font-size: 16px;
-    line-height: 1.7;
+    margin-bottom: 20px;
+    max-width: 430px;
 }
 
 .hero-btn {
     display: flex;
-    flex-wrap: wrap;
-    gap: 14px;
+    gap: 10px;
 }
 
-/* Illustration du calendrier */
+.btn-primary {
+    background: var(--secondary);
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+}
 
-.hero-illustration {
-    position: relative;
-    min-height: 290px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.btn-secondary {
     background: white;
-    border-radius: 18px;
+    color: var(--secondary);
+    border: 2px solid var(--secondary);
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
 }
 
-.calendar {
-    position: relative;
-    width: 185px;
-    height: 170px;
-    border-radius: 18px;
-    background: white;
-    overflow: visible;
-}
-/* .calendar {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-} */
 .image {
-    width: 100%;
+    flex: 0 0 420px;
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .image img {
     width: 100%;
-    max-width: 480px;
+    max-width: 320px;
     height: auto;
-    display: block;
-    object-fit: contain;
 }
+
 
 .footerdown {
     color: white;
@@ -289,8 +289,7 @@
     justify-content: space-around;
     align-items: center;
     gap: 50px;
-        display: flex;
-
+    display: flex;
     color: white;
 }
 .stats-container h3 {
@@ -313,7 +312,6 @@
 .separator {
     margin-left: 100px;
     margin-right: 100px;
-    
     height: 2px;
     background-color: var(--subtextcolor);
     display: flex;
@@ -403,99 +401,169 @@
     gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
 }
-
-.page { max-width: 1100px; margin: auto; }
-.intro {
-      background: #fce8e8; 
-     padding: 40px 20px; 
-    }
-.intro h2{
-     font-size: 32px;
-      margin-bottom: 10px;
-     }
-.intro p{
-     color: #666; 
-     font-size: 14px;
-      max-width: 600px; }
-
-.grid-events {
-  display: grid;
-  grid-template-columns: 1fr; /* Mobile 375 */
-  gap: 20px;
-  padding: 20px;
+/* bahija page evenement  */
+ .intro {
+    background: var(--background);
+    padding: 35px 95px ;
+    
 }
+.intro h1,
+.intro h2 {
+    font-size: 30px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+    color: var(--textcolor);
+    
+}
+
+.intro p {
+    width: 100%;
+    color: var(--subtextcolor);
+    font-size: 13px;
+     
+}
+
+/* ========== EVENTS ========== */
+
+.events {
+    max-width: 1150px;
+    padding: 35px 25px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.events-head {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 22px;
+}
+
+.events-head h2,
+.events-head h3 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.events-head span {
+    color: var(--subtextcolor);
+    font-size: 13px;
+}
+
+/* ========== EVENTS GRID ========== */
+
+ .grid-events {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    width: 100%;
+}
+
+/* ========== EVENT CARD ========== */
 .card {
-  border: 1px solid #eee;
-  border-radius: 12px;
-  overflow: hidden;
-  background: white;
-  display: grid;
-}
-.card-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  
-}
-.card > div:first-child {
-    height: 150px; 
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background:var(--background)}
-.card .tag { 
-    color: #C2410C;
-     font-size: 11px;
-      background: #FFEDD5;
-       padding: 4px 8px;
-        border-radius: 12px; 
-        width: fit-content;
-         margin: 12px; 
-        }
-.card h4 {
-    padding: 0 12px; 
-    font-size: 15px; }
-.card p {
-     padding: 0 12px; 
-     font-size: 12px; 
-     color: #666; }
-.card a {
-     padding: 12px; 
-     font-size: 12px; 
-     color: #C2410C; 
-     text-decoration: none; 
-     font-weight: 600;
-     }
-@media (min-width: 768px) {
-  
-  .grid-events {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .burger{
-    display: none;
-}
-   .hero{ 
+    height: auto;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    display: flex;
     flex-direction: column;
-     padding: 40px 20px;
-     }
-  .hero-left, .image{ width: 100%; }
-  .footer-container { 
-    flex-direction: column;
-     margin: 0 20px; 
-    }
-  .info-container {
-     flex-direction: column; 
-    }
-  .option-container { 
-    margin-left: 0;
-     margin-top: 25px;
-     }
-  .separator, .credits {
-     margin-left: 20px;
-      margin-right: 20px;
-     }
+    overflow: hidden;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.13);
 }
 
+
+
+/* Images */
+
+.card-img {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-pink {
+    background: var(--background);
+}
+
+.bg-blue {
+    background: var(--lightgreen);
+}
+
+.card-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Card content */
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    padding: 15px;
+}
+
+.card .tag {
+    display: inline-block;
+    width: fit-content;
+    margin-bottom: 12px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background:var(--background);
+    color: var(--secondary);
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.card .tag-conf,
+.card .tag-rencontre {
+    background: var(--lightgreen);
+    color: var(--darkgreen);
+}
+
+.card h3,
+.card h4 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: var(--subtextcolor);
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 4px;
+}
+
+.card p i {
+    width: 17px;
+    color: var(--subtextcolor);
+}
+
+.card a {
+    margin-top: 0;
+    padding-top: 4px;
+    color: var(--secondary);
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+/* bakr */
 .pagetitle {
     background-color: var(--background);
 }
@@ -654,4 +722,4 @@
     border: 1px solid #57534E;
     width: 100%;
     border-radius: 10px;
-}
+} 
